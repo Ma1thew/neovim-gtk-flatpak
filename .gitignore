@@ -2,3 +2,4 @@
 build
 nvim-gtk
 *.flatpak
+org.daa.NeovimGtk

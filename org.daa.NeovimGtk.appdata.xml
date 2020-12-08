@@ -23,6 +23,6 @@
     <url type="homepage">https://github.com/daa84/neovim-gtk</url>
 
     <provides>
-        <binary>nvim-gtk</binary>
+        <binary>nvim-gtk-wrapper</binary>
     </provides>
 </component>

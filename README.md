@@ -1,3 +1,5 @@
+Modified to use the flatpak install of neovim (io.neovim.nvim); this won't work without it. Install with `sudo flatpak-builder --install --force-clean --install-deps-from=flathub org.daa.NeovimGtk org.daa.NeovimGtk.json`. Original description below, but note that nvim configuration will be in `~/.var/app/io.neovim.nvim/config/nvim`.
+
 # Flatpak packge for NeovimGtk
 Currently only bundle is available you can find it at [releases](https://github.com/daa84/neovim-gtk-flatpak/releases) page.
 Installation command: `flatpak install nvim-gtk_x86_64.flatpak`.
