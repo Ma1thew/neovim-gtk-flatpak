@@ -92,7 +92,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/daa84/neovim-gtk",
+                    "url": "https://github.com/Ma1thew/neovim-gtk",
                     "branch": "master"
                 }
             ]
