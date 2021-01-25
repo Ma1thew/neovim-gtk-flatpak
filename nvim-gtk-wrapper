@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/app/bin/nvim-gtk --nvim-bin-path=/app/bin/nvim-wrapper "$@"

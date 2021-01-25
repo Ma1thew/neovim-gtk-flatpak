@@ -4,7 +4,7 @@
     "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": ["org.freedesktop.Sdk.Extension.rust-stable"],
-    "command": "nvim-gtk-wrapper",
+    "command": "nvim-gtk",
     "finish-args": [
         "--share=ipc", "--socket=x11",
         "--socket=wayland",
@@ -86,7 +86,6 @@
             },
             "buildsystem": "simple",
             "build-commands": [
-                "sed -i 's/nvim-gtk/nvim-gtk-wrapper/' desktop/org.daa.NeovimGtk.desktop",
                 "PATH=$PATH:/app/rust/bin make PREFIX=\"/app\" install"
             ],
             "sources": [
@@ -99,20 +98,15 @@
         },
 
         {
-            "name": "wrappers",
+            "name": "nvim",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm755 nvim-wrapper /app/bin/nvim-wrapper",
-                "install -Dm755 nvim-gtk-wrapper /app/bin/nvim-gtk-wrapper"
+                "install -Dm755 nvim /app/bin/nvim"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "path": "nvim-wrapper"
-                },
-                {
-                    "type": "file",
-                    "path": "nvim-gtk-wrapper"
+                    "path": "nvim"
                 }
             ]
         }
